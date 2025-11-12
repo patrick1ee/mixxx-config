@@ -1,9 +1,9 @@
 <skin>
 	<manifest>
 		<title>pioneered-no-wave</title>
-		<author>Sven Boekelder</author>
-		<version>0.5.0</version>
-		<description>Pioneer inspired theme for smaller screen resolutions</description>
+		<author>Sven Boekelder, Patrick Lee</author>
+		<version>1.0.0</version>
+		<description>Minimal version of Pioneered skin</description>
 		<language>*</language>
 		<license>GPL</license>
 		<attributes>
