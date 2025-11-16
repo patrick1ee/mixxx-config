@@ -42,6 +42,9 @@
      },
      
      input: function(channel, control, value, status, _group) {
+     if(!engine.getValue("[Tab]",'library') || engine.getValue("[Sidebar]",'sidebar_visible')) {
+        return;
+     }
      this.send(this.isPress(channel, control, value, status) ? this.on : this.off);
      components.Button.prototype.input.apply(this, arguments);    
      engine.setValue("[Tab]",'library',0);
@@ -83,6 +86,9 @@
      },
      
      input: function(channel, control, value, status, _group) {
+    if(!engine.getValue("[Tab]",'library') || engine.getValue("[Sidebar]",'sidebar_visible')) {
+        return;
+     }
      this.send(this.isPress(channel, control, value, status) ? this.on : this.off);
      components.Button.prototype.input.apply(this, arguments);
      engine.setValue("[Tab]",'library',0);
@@ -294,6 +300,10 @@
                      if (!this.isListExpanded) {
                          // Naviga tra le playlist o contenitori
                          engine.setValue("[Playlist]", "SelectPlaylist", rotateValue);
+                        
+                         //Sort bpm
+                        engine.setValue("[Library]", "sort_column", 15);
+                        engine.setValue("[Library]", "sort_order", 0);
                      } else {
                          // Naviga tra i brani
                          engine.setValue("[Playlist]", "SelectTrackKnob", rotateValue);
@@ -327,12 +337,8 @@
                  }
  
                  if (!this.isLongPressed) {
-                     //Show library if not already visible
-                     if(!engine.getValue("[Tab]", "library")) {
-                        engine.setValue("[Tab]",'library',1);
-                     }
                      // Short click: espandi o contrai la lista
-                     else if (!this.isListExpanded) {
+                     if (!this.isListExpanded) {
                          script.triggerControl("[Playlist]", "ToggleSelectedSidebarItem");
                          this.isListExpanded = true;
                      } else {
@@ -373,10 +379,27 @@
                  break;
              }
              case 0x9F: // Pressione del knob
-                // If Knob released AND shifted AND library tab is currently open, then toggle library sidebar
-                if(!value && control === 0x07 && engine.getValue("[Tab]", "library")) {
-                     engine.setValue("[Sidebar]", "sidebar_visible", !engine.getValue("[Sidebar]", "sidebar_visible"));
-                } else {
+                //SHOW LIBRARY
+                if(!value && !engine.getValue("[Tab]", "library")) {
+                    engine.setValue("[Tab]",'library',1);
+                    this.isListExpanded = true;
+                }
+                // If Knob released AND shifted AND library tab is currently open BUT sidebar closed, then CLOSE LIBRARY
+                else if(!value && control === 0x07 && engine.getValue("[Tab]", "library") && !engine.getValue("[Sidebar]", "sidebar_visible")) {
+                    engine.setValue("[Tab]",'library',0);
+                } 
+                // If Knob released AND shifted AND library tab is currently open BUT sidebar open then CLOSE SIDEBAR
+                else if(!value && control === 0x07 && engine.getValue("[Tab]", "library") && engine.getValue("[Sidebar]", "sidebar_visible")) {
+                    engine.setValue("[Sidebar]", "sidebar_visible", 0);
+                    this.isListExpanded = true;
+                } 
+                // If Knob released AND library tab is currently open BUT sidebar closed then OPEN SIDEBAR
+                else if(!value && engine.getValue("[Tab]", "library") && !engine.getValue("[Sidebar]", "sidebar_visible")) {
+                    engine.setValue("[Sidebar]", "sidebar_visible", 1);
+                    this.isListExpanded = false;
+                }
+                
+                else {
                     this.onButtonEvent(value)
                     script.triggerControl(group, this.isShifted ? 'MoveFocusBackward'
                     : 'MoveFocusForward');
