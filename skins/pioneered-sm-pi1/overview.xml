@@ -7,6 +7,7 @@
       <WidgetGroup>
         <ObjectName>Waveforms_Container</ObjectName>
         <Layout>horizontal</Layout>
+        <Size>0me,175max</Size>
         <Children>
           <Template src="skin:waveforms.xml"></Template>
         </Children>
