@@ -9,7 +9,6 @@
         <Layout>horizontal</Layout>
         <Children>
           <Template src="skin:waveforms.xml"></Template>
-          <Template src="skin:effects.xml"></Template>
         </Children>
       </WidgetGroup>
       <WidgetGroup>

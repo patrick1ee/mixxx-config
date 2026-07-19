@@ -5,5 +5,5 @@
 set -e
 
 mkdir -p ~/.mixxx/skins
-[[ -d ~/.mixxx/skins/Pioneered ]] && rm -rf ~/.mixxx/skins/pioneered-sm
-cp -r $(dirname $0) ~/.mixxx/skins/pioneered-sm
+[[ -d ~/.mixxx/skins/pioneered-sm-pi1 ]] && rm -rf ~/.mixxx/skins/pioneered-sm-pi1
+cp -r $(dirname $0) ~/.mixxx/skins/pioneered-sm-pi1

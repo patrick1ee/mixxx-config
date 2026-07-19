@@ -180,64 +180,6 @@ WPushButton[value="1"]:hover {
 }
 
 /************************************************************************/
-/*     BeatFX                                                           */
-/************************************************************************/
-
-#BeatFX_Container {
-  border: 2px solid #32323c;
-  margin-left: 4px;
-  qproperty-layoutAlignment: 'AlignCenter | AlignTop';
-}
-
-#BeatFX_Header {
-  background-color: #32323c;
-  qproperty-layoutAlignment: 'AlignHCenter | AlignVCenter';
-}
-
-#BeatFX_Title {
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-#BeatFX_Unit[highlight="0"] {
-  padding: 1px;
-  border: 1px solid #32323c;
-}
-
-#BeatFX_Unit[highlight="1"] {
-  padding: 1px;
-  border: 1px solid #2d85cd;
-}
-
-/************************************************************************/
-/*     Effects                                                          */
-/************************************************************************/
-
-WEffectSelector {
-  background-color: transparent;
-  color: #2d85cd;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 4px;
-  text-transform: uppercase;
-}
-
-#EffectMeter {
-  padding: 0px 1px 0px 1px;
-}
-
-#EffectToggle {
-  color: gray;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-#EffectToggle[value="1"] {
-  color: #2d85cd;
-}
-
-/************************************************************************/
 /*     Library                                                          */
 /************************************************************************/
 
@@ -420,54 +362,4 @@ WBeatSpinBox::up-button {
 
 #WaveformInfo_QuantizeButton {
   image: url(skin:icons/quantize.svg) no-repeat center center;
-}
-
-/************************************************************************/
-/*     Tabs                                                             */
-/************************************************************************/
-
-#TabControls WPushButton {
-  background-color: black;
-  font-weight: bold;
-  margin: 10px 10%;
-  max-width: 250px;
-  text-transform: uppercase;
-}
-
-#TabControls WPushButton[value="0"] {
-  border: 2px solid gray;
-  color: gray;
-}
-
-#TabControls WPushButton[value="1"] {
-  border: 2px solid #c3d541;
-  color: #c3d541;
-}
-
-/************************************************************************/
-/*     Samplers                                                         */
-/************************************************************************/
-
-#Sampler {
-  background-color: #32323c;
-  border: 2px solid #d73535;
-  border-radius: 2px;
-  color: white;
-  font-size: 24px;
-  margin: 4px;
-  padding: 2px;
-}
-
-#Sampler[value="1"] {
-  background-color: #d73535;
-}
-
-#Sampler_Info {
-  color: white;
-  font-size: 10px;
-  margin: 4px;
-}
-
-#SamplersDeck1, #SamplersDeck2 {
-  margin: 0 4px;
 }
