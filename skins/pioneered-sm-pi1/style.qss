@@ -75,29 +75,29 @@ WPushButton[value="1"]:hover {
 }
 
 #DeckBPMWrapper {
-  border: 2px solid #e5e6ea;
-  border-radius: 5px;
-  margin-bottom: 4px;
-  padding-right: 2px;
+  border: 1px solid #e5e6ea;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  padding-right: 1px;
   qproperty-layoutAlignment: 'AlignRight | AlignVCenter';
 }
 
 #DeckBPM {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 #DeckBPMTitleWrapper {
-  padding: 0 2px;
+  padding: 0 1px;
   qproperty-layoutAlignment: 'AlignRight | AlignVCenter';
 }
 
 #DeckBPMTitle {
-  font-size: 8px;
+  font-size: 7px;
   font-weight: bold;
 }
 
 #TrackBPMRangeContainer {
-  padding: 5px;
+  padding: 3px;
   qproperty-layoutAlignment: 'AlignHCenter | AlignTop';
 }
 
@@ -107,13 +107,13 @@ WPushButton[value="1"]:hover {
 }
 
 #BPMRangePlusMinus, #RateDisplay {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
 }
 
 #DeckHeader {
   background-color: #112f5c;
-  padding: 2px;
+  padding: 1px;
 }
 
 #DeckOverview {
@@ -121,21 +121,21 @@ WPushButton[value="1"]:hover {
 }
 
 #DeckTitle, #DeckTitleNote {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 #DeckTitleNote {
-  margin: 0 2px;
+  margin: 0 1px;
 }
 
 #DeckChannelTitle, #DeckTrackTimeTitle, #DeckTempoTitle {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 #DeckPlayingLeft, #DeckPlayingRight {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -145,7 +145,7 @@ WPushButton[value="1"]:hover {
 }
 
 #DeckTrackTime {
-  font-size: 36px;
+  font-size: 28px;
 }
 
 #DeckTrackTime[highlight="1"] {
@@ -153,7 +153,7 @@ WPushButton[value="1"]:hover {
 }
 
 #DeckTrackTimeMini {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #DeckTrackTimeMini[highlight="1"] {
@@ -161,7 +161,7 @@ WPushButton[value="1"]:hover {
 }
 
 #DeckTrackNumberContainer {
-  margin: 0 4px;
+  margin: 0 2px;
   qproperty-layoutAlignment: 'AlignHCenter | AlignTop';
 }
 
@@ -170,12 +170,12 @@ WPushButton[value="1"]:hover {
 }
 
 #TrackNumberTitle {
-  font-size: 12px;
+  font-size: 10px;
   text-transform: uppercase;
 }
 
 #TrackNumber {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -198,7 +198,7 @@ WPushButton[value="1"]:hover {
 
 #LibraryWrapper QScrollBar:vertical {
   border: 0;
-  width: 4px;
+  width: 3px;
 }
 
 #LibraryWrapper QScrollBar::add-page,
@@ -216,7 +216,7 @@ WPushButton[value="1"]:hover {
   background-color: #32323c;
   color: #e5e6ea;
   font-weight: bold;
-  margin: 2px;
+  margin: 1px;
   text-transform: uppercase;
 }
 
@@ -232,7 +232,7 @@ WPushButton[value="1"]:hover {
 #LibraryWrapper WLibrarySidebar {
   background-color: #32323c;
   selection-background-color: #e5e6ea;
-  border-left: 4px solid gray;
+  border-left: 3px solid gray;
   color: #e5e6ea;
   font-weight: bold;
   selection-color: black;
@@ -255,9 +255,9 @@ WLabel {
 #SearchBox {
   background-color: #112f5c;
   border-radius: 0;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
-  padding: 4px;
+  padding: 3px;
   text-transform: uppercase;
 }
 
@@ -267,12 +267,12 @@ WLabel {
 }
 #SidebarButton {
   background-color: rgba(0,0,0,0.2);
-  border: 2px solid lightgray;
-  border-radius: 4px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
   color: lightgray;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: bold;
-  margin: 4px;
+  margin: 2px;
 }
 
 /* Checkbox in library "Played" column */
@@ -291,23 +291,23 @@ WLabel {
 /************************************************************************/
 
 #WaveformInfo {
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 #WaveformInfo_Header {
   background-color: #32323c;
-  border-top-right-radius: 10px 25px;
-  padding-right: 2px;
+  border-top-right-radius: 6px 15px;
+  padding-right: 1px;
 }
 
 #WaveformInfo_Header[highlight="1"] {
-  border: 2px solid #e5e6ea;
+  border: 1px solid #e5e6ea;
 }
 
 #WaveformInfo_Title,
 #WaveformInfo_Key,
 #WaveformInfo_Bars {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -322,26 +322,26 @@ WLabel {
 #WaveformInfo_Key_Icon {
   background-color: #e5e6ea;
   border-radius: 2px;
-  font-size: 14px;
-  margin: 4px;
-  padding: -6px -6px -3px -2px;
+  font-size: 12px;
+  margin: 2px;
+  padding: -4px -4px -2px -1px;
 }
 
 #WaveformInfo_Loop_Icon {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
-  margin: 2px;
+  margin: 1px;
 }
 
 #WaveformInfo_BeatloopSizeSpinBox {
-  margin: 3px;
-  padding: -4px -4px 0px -8px;
+  margin: 2px;
+  padding: -3px -3px 0px -5px;
 }
 
 WBeatSpinBox {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   background-color: #000000;
 }
