@@ -21,7 +21,7 @@
 	<ObjectName>Mixxx</ObjectName>
 	<Style src="skin:style.qss"/>
 	<MinimumSize>480,250</MinimumSize>
-	<SizePolicy>me,250max</SizePolicy>
+	<SizePolicy>me,me</SizePolicy>
 	<Layout>vertical</Layout>
 
 	<LaunchImageStyle>

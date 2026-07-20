@@ -116,7 +116,7 @@
           <WidgetGroup>
             <ObjectName>TrackBPMContainer</ObjectName>
             <Layout>vertical</Layout>
-            <Size>50max,10max</Size>
+            <Size>60max,10max</Size>
             <Children>
               <WidgetGroup>
                 <ObjectName>DeckBPMWrapper</ObjectName>
@@ -159,7 +159,7 @@
         <Children>
           <Overview>
             <ObjectName>DeckOverview</ObjectName>
-            <Size>0me,100f</Size>
+            <Size>0me,50f</Size>
             <Channel><Variable name="channel"/></Channel>
             <BgColor>#000</BgColor>
             <SignalColor>#222</SignalColor>
