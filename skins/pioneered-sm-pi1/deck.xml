@@ -41,7 +41,7 @@
                     <Children>
                       <NumberPos>
                         <ObjectName>DeckTrackTimeMini</ObjectName>
-                        <MaximumSize>150,-1</MaximumSize>
+                        <MaximumSize>100,-1</MaximumSize>
                         <TooltipId>track_time</TooltipId>
                         <NumberOfDigits>6</NumberOfDigits>
                         <Channel><Variable name="channel"/></Channel>
@@ -55,7 +55,7 @@
                       </NumberPos>
                       <NumberPos>
                         <ObjectName>DeckTrackTime</ObjectName>
-                        <MinimumSize>150,-1</MinimumSize>
+                        <MinimumSize>100,-1</MinimumSize>
                         <TooltipId>track_time</TooltipId>
                         <NumberOfDigits>6</NumberOfDigits>
                         <Channel><Variable name="channel"/></Channel>
